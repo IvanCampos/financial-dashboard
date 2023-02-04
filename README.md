@@ -1,5 +1,7 @@
 # Financial Dashboard
 
+<blockquote class="twitter-tweet"><p lang="de" dir="ltr">Dark Mode <a href="https://twitter.com/hashtag/dataviz?src=hash&amp;ref_src=twsrc%5Etfw">#dataviz</a> <a href="https://t.co/LDgqPcwfFj">pic.twitter.com/LDgqPcwfFj</a></p>&mdash; Ivan Campos (@ivancampos) <a href="https://twitter.com/ivancampos/status/1620946560577323008?ref_src=twsrc%5Etfw">February 2, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 Built with:
 * WebSockets
 * Fear and Greed Index
