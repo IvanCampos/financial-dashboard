@@ -1,0 +1,193 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0
+}
+
+:root {
+    background: ghostwhite;
+    min-height: 100vh;
+    height: 100vh;
+    max-height: 100vh;
+    min-width: 100vw;
+    width: 100vw;
+    max-width: 100vw;
+
+    --btc-color: #FF9900;
+    --money: #85bb65;
+    --fear: #EF4657;
+    --dark: #505050;
+    --dark2: #5c5c5c;
+    --globe-bg: #FFF;
+    --lightG: #c2c2c2;
+}
+
+html {
+    font-family: Orbitron, Arial;
+    font-size: 62.5%;
+}
+
+body {
+    padding: 2rem;
+    background-color: ghostwhite;
+}
+
+#ic {
+    color: deepskyblue;
+    cursor: pointer;
+    font-size: 2.3rem;
+    font-weight: bolder;
+    text-shadow: 0 0 0.3rem white,
+    0 0 0.7rem white,
+    0 0 1.1rem white;
+}
+
+#timer {
+    position: absolute;
+}
+#time {
+    position: relative;
+    padding-left: 0rem;
+    padding-top: 7.5rem;
+    font-size: 1.8rem;
+    color: var(--lightG);
+}
+
+#btc {
+    color: var(--btc-color);
+    font-size: 2.9rem;
+    padding-top: 0.5rem;
+}
+
+#eth {
+    color: var(--dark);
+    font-size: 2.9rem;
+    padding-top: 0.5rem;
+}
+
+#gwei {
+    color: var(--dark);
+    font-size: 1.5rem;
+    padding-top: 0.5rem;
+}
+
+.wrapper {
+    height: 5.5rem;
+    width: 6rem;
+}
+
+#candlesticks {
+    top: -5.5rem;
+    left: -3rem;
+    height: 24rem;
+    width: 29.5rem;
+}
+
+.split {
+    height: 10rem;
+}
+
+#days {
+    position: absolute;
+    display: inline-flex;
+    top: 26.5rem;
+    font-size: 1.37rem;
+}
+
+.day {
+    position: relative;
+    padding-right: 0.22rem;
+    color: var(--dark);
+}
+
+.plus {
+    color: var(--money);
+}
+
+.minus {
+    color: var(--fear);
+}
+
+.plus2 {
+    color: green;
+}
+
+.minus2 {
+    color: red;
+}
+
+td {
+    color: var(--dark);
+    padding: 0.2rem;
+}
+
+.video-container {
+    position: absolute;
+    padding-top: 0.5rem;
+    height: 28.0rem;
+    width: 40.0rem;
+    padding-left: 1.0rem;
+    overflow: visible;
+    opacity: 0.9;
+}
+#glass {
+    opacity: 0.9;
+    position: absolute;
+    font-size: 1.1rem;
+    left: 80.0rem;
+    width: 23.2rem;
+    padding-top: 1.2rem;
+    padding-left: 3.0rem;
+}
+.action {
+    color: #f2a900;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.title {
+    padding-bottom: 0.5rem;
+    font-size: 1.6rem;
+}
+#video-wrapper {
+    position: relative;
+    left: 53rem;
+    top: -85rem;
+}
+.rando {
+    font-size: 1.6rem;
+    color: deepskyblue;
+    cursor: pointer;
+    padding-top: 0.5rem;
+}
+
+#play-pause {
+    font-size: 1.6rem;
+}
+
+#audio-title, #audio-channel {
+    color: black;
+    padding-bottom: 0.5rem;
+}
+
+#audio-controls {
+    font-size: 1.6rem;
+    padding-bottom: 0.5rem;
+}
+
+#audio-channel {
+    font-size: 1.6rem;
+}
+
+#audio-title {
+    font-size: 1.2rem;
+}
+
+#news, #tweets {
+    color: var(--dark2);
+    font-size: 1.2rem;
+}
+
+#news a {
+    color: var(--dark);
+    text-decoration: none;
+}

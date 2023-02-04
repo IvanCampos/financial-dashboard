@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ivan Campos</title>
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+    <link rel="stylesheet" href="styles/fng.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.1.2/echarts.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/echarts-gl@2/dist/echarts-gl.min.js"></script>
+    <script src="scripts/tsla.js"></script>
+    <script src = "https://www.youtube.com/iframe_api"></script>
+</head>
+<body>
+    <span id="ic" onclick="switchStylesheet()">ivan campos</span>
+
+    <div class="btc" id="btc"></div>
+    <div class="eth" id="eth"></div>
+    <div id="fng">
+        <div id="ind1" class="indicators">
+            <div id="extreme-fear" class="indicator">Extreme Fear</div>
+            <div id="fear" class="indicator">Fear</div>
+        </div>
+        <div id="ind2" class="indicators">
+            <div id="greed" class="indicator">Greed</div>
+            <div id="extreme-greed" class="indicator">Extreme Greed</div>
+        </div>
+    </div>
+
+    <div id="globe"></div>
+
+    <div id="timer">
+        <div id="time"></div>
+    </div>
+
+    <div id="days"></div>
+
+    <div id="stocks" style="padding-top: 12rem; font-size: 1.7rem;"></div>
+
+    <div id="cryptoContainer" style="position: relative">
+        <div id="cryptos" style="position: absolute; top: -57rem; left: 27rem; padding-top: 2rem; font-size: 1.7rem;"></div>
+    </div>
+
+    <script type="module" src="main.js"></script>
+    <script>
+        createGlobeTesla("globe-tesla", 23);
+
+        const CSS_LIGHT = "<link id='lightCSS' rel='stylesheet' href='./styles/light.css' type='text/css'>";
+        const CSS_DARK = "<link id='darkCSS' rel='stylesheet' href='./styles/dark.css' type='text/css'>";
+
+        function getStylesheet() {
+            var currentTime = new Date().getHours();
+            if (6 <= currentTime&&currentTime < 19) {
+                document.write(CSS_LIGHT);
+            }
+            else {
+                document.write(CSS_DARK);
+            }
+        }
+        getStylesheet();
+
+        function switchStylesheet() {
+            let darkCSS = document.getElementById("darkCSS");
+            let lightCSS = document.getElementById("lightCSS");
+
+            if (darkCSS == null) {
+                document.getElementById("lightCSS").remove();
+                setSheet("darkCSS","./styles/dark.css");
+                setGlobe();
+            } else if (lightCSS == null) {
+                document.getElementById("darkCSS").remove();
+                setSheet("lightCSS","./styles/light.css");
+                setGlobe();
+            }
+        }
+
+        function setSheet(id, href) {
+            var sheet = document.createElement('link');
+            sheet.rel = "stylesheet";
+            sheet.id = id;
+            sheet.href = href;
+            sheet.type = "text/css";
+            document.body.appendChild(sheet);
+        }
+
+        function setGlobe() {
+            if (document.getElementById("globe-tesla")) {
+                document.getElementById("globe-tesla").remove();
+                createGlobeTesla("globe-tesla", 23);
+            }
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+#fng {
+    color:orange;
+    font-family: Orbitron;
+    text-transform: uppercase;
+    padding-top: 2rem;
+}
+
+@keyframes fear-pulse {
+    0% { background-color: #000; }
+    50% { background-color: red; }
+    100% { background-color: #000; }
+}
+
+@keyframes greed-pulse {
+    0% { background-color: #000; }
+    50% { background-color: green; }
+    100% { background-color: #000; }
+}
+
+.indicators {
+    display: flex;
+    width: 24rem;
+}
+
+.indicator {
+    color: gray;
+    border: 1px solid gray;
+    width: 49.5%;
+    font-size: 1.4rem;
+    margin-bottom: 0.2rem;
+    margin-right: 0.2rem;
+    padding-left: 0.5rem;
+}
+
+#fng-num {
+    font-size: 1.4rem;
+    color: white;
+    text-shadow: 0 0 1rem white;
+    padding-bottom: 0.4rem;
+}
+
+.fng-link {
+    text-decoration: none;
+    font-size: 0.8rem;
+    color: #4b4b50;
+}
+#fng-link-parent {
+    margin-left: 17.3rem;
+}
+
+#fear-and-greed {
+    position: relative;
+}
