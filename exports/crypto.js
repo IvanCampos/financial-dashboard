@@ -2,7 +2,8 @@ import {addCommas} from './numbers.js';
 import {setQuotes} from "./yhooHelper.js";
 
 export function getCryptos() {
-    const URL = 'https://ij4tn9jyvc.execute-api.us-east-1.amazonaws.com/crypto';
+    //SEE README FOR AWS LAMBDA CODE TO MAKE YAHOO FINANCE API CALL
+    const URL = 'YOUR_LAMBDA_URL';
     setQuotes(URL, "cryptos");
 }
 
