@@ -9,7 +9,9 @@ Built with:
 * @GitHub Pages
 
 ## YAHOO FINANCE API CALL MUST ORIGINATE FROM A SERVER
-Create your own Lambda function to avoid CORS for Yahoo Finance Calls
+
+### THIS IS TO BE CALLED WITHIN /exports/stock.js : getStocks()
+How to create your own AWS Lambda function to avoid CORS for Yahoo Finance Calls
 ```
 export const handler = async(event) => {
 
