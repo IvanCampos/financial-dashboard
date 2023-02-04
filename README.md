@@ -8,6 +8,7 @@ Built with:
   * @Tesla Supercharger Locations
 * JS/CSS/HTML 
 * @GitHub Pages
+* AWS Lambda **(SEE MESSAGE BELOW)** 
 
 ## YAHOO FINANCE API CALL MUST ORIGINATE FROM A SERVER
 
