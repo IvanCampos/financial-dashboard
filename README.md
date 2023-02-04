@@ -3,8 +3,9 @@
 Built with:
 * WebSockets
 * Fear and Greed Index
-* @YahooFinance 
-* @ApacheECharts (@Tesla Supercharger Locations)
+* @YahooFinance **(SEE MESSAGE BELOW)**
+* @ApacheECharts
+  * @Tesla Supercharger Locations
 * JS/CSS/HTML 
 * @GitHub Pages
 
